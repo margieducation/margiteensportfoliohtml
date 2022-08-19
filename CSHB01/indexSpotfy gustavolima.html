@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="icon" type="imagem/png" href="./logo.png"> <!---ícone da página--->
+        
+        </head>
+<body>
+    <nav> <!---Barra de navegação--->
+        <ul>
+            <li class="brand"><img src="https://logospng.org/download/spotify/logo-spotify-icon-2048.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>Sobre</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>minha playlist-gustavo</h1>
+            <div class="songItemContainer"> <!---Música aqui--->
+                <div class="songItem">
+                    <img src="http://i.ytimg.com/vi/_vV44b2HiQo/hqdefault.jpg">
+                    <span class="songName">metal contra as nuvens</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/7pGaLGTJlu9FXwl3UIQtkn?si=471e99137b3d40cb"target="_blank">
+                       <button class="but">></button>
+                    </a>
+                  
+                </div>              
+                <div class="songItem">
+                    <img src="https://4.bp.blogspot.com/_JrlQqaqZfBY/TQ-CHbMxkrI/AAAAAAAAGHI/IqQYcZSRVFo/s1600/Skank%2B-%2BSutilmente%2B%2528Vers%25C3%25A3o%2BDeep%2529%2B%2528Capa%2BOficial%2Bdo%2BSingle%2529%2BCover%2BBrasil.jpg">
+                    <span class="songName">sutil</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/4pG8lbKPKkfGSniMXxZTM7?si=53115a3592e64118"target="_blank">
+                       <button class="but">></button>
+                    </a>
+                   
+                           
+                </div>
+                <div class="songItem">
+                    <img src="https://images.genius.com/05f99d32da4a5983c7d99f1b2867d8a5.1000x1000x1.jpg">
+                    <span class="songName">don't say goodbye</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/0GTPmh5G40joBg93vcSQNq?si=3810401fdc324614"target="_blank">
+                       <button class="but">></button>
+                    </a>
+                   
+                           
+                </div>
+                <div class="songItem">
+                    <img src="">
+                    <span class="songName">metamorfose ambulante</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/2Yk0HvfTaijA47aM0Fj88u?si=331acc8bdfd844b2"target="_blank">
+                       <button class="but">></button>
+                    </a>
+                   
+                           
+                </div>
+                <div class="songItem">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.hIoCmJN-E2GuejVnZKyzBwHaEK&pid=Api&P=0">
+                    <span class="songName">everybody</span>
+                    <span class="songlistplay">
+                    <a href="https://open.spotify.com/track/1di1BEgJYzPvXUuinsYJGP?si=930937dde4c54378"target="_blank">
+                       <button class="but">></button>
+                    </a>
+                   
+                           
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+</body>
+</html>
+
+
+
+<!-- Estilo -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.but{
+    background-color: chartreuse;
+    margin: 50px;
+background-color: chartreuse;
+width: 50px; ;
+height: 30px; ;
+color: darkmagenta;
+border-radius: 50px;
+}
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 100%;
+   padding: 34px;
+   background-image: url('Frank.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 25px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp a{
+    margin: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: black;
+    }
+}
+
+@media (max-width:900px){
+  .songItem{
+        width: 80%;
+    }
+    .songItemContainer{
+        width: 100%;
+    }
+    .songItem i{
+        margin-left: 100px;
+        margin-bottom: 28px;
+    }
+
+    .bottom input{
+        margin:35px;
+        text-align: center;
+    }
+
+    .songItem{
+        height: 55px;
+        display: flex;
+        background-color: white;
+        font-size: 15px;
+        
+        color: black;
+        margin: 12px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    }
+
+    h1{
+        text-align: center;
+        margin-right: 100px;
+    }
+
+}
+</style>
