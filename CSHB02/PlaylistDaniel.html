@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="icon" type="imagem/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png"> <!---ícone da página--->
+        
+        </head>
+<body>
+    <nav> <!---Barra de navegação--->
+        <ul>
+            <li class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="Spotify"> Spotify</li>
+            <li>Home</li>
+            <li>Sobre</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Melhores de Skank</h1>
+            <div class="songItemContainer"> <!---Música aqui--->
+                <div class="songItem">
+                    <img src="https://s2.glbimg.com/2qVC6fZuL4wsvcQGZI2IytKBqNg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/B/x/aJxFV7QxemYii6T0Wjsw/skank-26336-media.jpg">
+                    <span class="songName">Sutilmente</span>
+                    <span class="songlistplay">
+                    <a href="https://www.youtube.com/watch?v=v3SQTOZO36E"target="_blank">
+                       <img src="https://imagepng.org/wp-content/uploads/2017/09/youtube-play-icone.png"
+                    </a>
+                      <i id="0" class="far songItemPlay fa-play-circle"></i>
+                  
+                </div>              
+              
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+</body>
+</html>
+
+
+
+<!-- Estilo -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 100%;
+   padding: 34px;
+   background-image: url('Frank.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    position: relative;
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 25px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp a{
+    margin: 0 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: black;
+    }
+}
+
+@media (max-width:900px){
+  .songItem{
+        width: 80%;
+    }
+    .songItemContainer{
+        width: 100%;
+    }
+    .songItem i{
+        margin-left: 100px;
+        margin-bottom: 28px;
+    }
+
+    .bottom input{
+        margin:35px;
+        text-align: center;
+    }
+
+    .songItem{
+        height: 55px;
+        display: flex;
+        background-color: white;
+        font-size: 15px;
+        
+        color: black;
+        margin: 12px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 34px;
+    }
+
+    h1{
+        text-align: center;
+        margin-right: 100px;
+    }
+
+}
+</style>
